@@ -1,6 +1,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
 .rel-imagenIzquierda {
@@ -10,9 +12,17 @@ body {
 }
 .rel-imagenIzquierda {
   text-align: center;
-  padding-top: 50vh;
   color: aliceblue;
 }
+
+.rel-imagenIzquierda h1{
+    padding-top: 50vh;
+}
+
+.rel-loginDerecho{
+    max-width: 50vw;
+}
+
 .rel-formularioLogin {
   display: flex;
   flex-flow: column;
