@@ -7,20 +7,23 @@ body {
 
 .rel-imagenIzquierda {
   background-image: url(../img/Fondo.png);
-  height: 100vh;
-  max-width: 50vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ffffff;
 }
 .rel-imagenIzquierda {
   text-align: center;
   color: aliceblue;
 }
 
-.rel-imagenIzquierda h1{
-    padding-top: 50vh;
+.rel-imagenIzquierda h1 {
+  padding-top: 50vh;
 }
 
-.rel-loginDerecho{
-    max-width: 50vw;
+.rel-loginDerecho {
+  max-width: 50vw;
 }
 
 .rel-formularioLogin {
@@ -37,6 +40,8 @@ body {
 }
 .rel-texto h2 {
   font-size: 6em !important;
+  min-width: 6em;
+  max-width: 15em;
 }
 .rel-texto h6 {
   font-family: "Open Sans", sans-serif;
@@ -44,6 +49,7 @@ body {
 }
 .btn {
   max-width: 25em;
+  min-width: 6em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
