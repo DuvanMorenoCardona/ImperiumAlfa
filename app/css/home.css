@@ -1,0 +1,11 @@
+body{
+
+}
+
+.uv-topbar{
+    background-color: #007571;
+}
+
+.uv-content{
+    display: flex;
+}
