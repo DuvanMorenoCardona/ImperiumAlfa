@@ -1,3 +1,35 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h3 {
+  font-weight: 400;
+}
+h5 {
+  font-size: 1em;
+}
+.rel-iniciarSesionCard {
+  margin-top: 5em;
+  padding: 2em;
+  max-width: 28em;
+}
+.rel-botones {
+  display: flex;
+  justify-content: space-between;
+}
+button.btn.btn-link,
+a {
+  text-decoration: none !important;
+}
+input#exampleInputEmail1 {
+  margin: 3em 0px 3em 0px;
+}
+.rel-espaciados {
+  margin: 3em 0px 3em 0px;
+}
+button.btn.btn-link.rel-espaciados {
+  padding: 0em 0px 2em 0px;
+  margin: 0px;
+}
+small#emailHelp {
+  padding-bottom: 2em;
 }
