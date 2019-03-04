@@ -17,9 +17,14 @@ body {
 }
 h5.card-title {
   color: red;
+  margin-top: 1em;
 }
-h6.text-left,label {
+h6.text-left,
+label {
   color: red;
+}
+h6 {
+  font-size: 14px !important;
 }
 .btn-danger {
   color: #fff;
@@ -29,19 +34,48 @@ h6.text-left,label {
   min-width: 100%;
 }
 .card {
-    margin-top: 6em;
-    background: #fff;
-    -webkit-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -o-border-radius: 20px;
-    border-radius: 20px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
-    -ms-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
-    -moz-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
-    -o-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
-    box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  background: #fff;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  -ms-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
 }
 a {
-    text-decoration: none !important;
-  }
+  text-decoration: none !important;
+}
+
+label {
+  margin-top: 1em;
+}
+
+.rel-imagen {
+  margin-top: 2em;
+  max-width: 10em;
+  align-content: center;
+  padding-right: 3em;
+}
+input,
+select {
+  max-width: 15em;
+  color: #818181;
+}
+
+.rel-seleccionar {
+  display: flex;
+  color: #818181;
+}
+
+.rel-contenido {
+  margin: 2em;
+  max-width: 18em;
+}
+
+button.btn.btn-danger {
+  margin-top: 2em;
+}
