@@ -22,10 +22,10 @@
   <body>
     <div class="container">
       <div class="row justify-content-end">
-        <div class="col align-self-end col-5">
+        <div class="col align-self-end col-5 text-center">
+            <img src="https://storage.googleapis.com/efor-static/UADO/Cloudkey/Logo_Single.png" alt="" srcset="" class="rel-imagen">
           <div class="card" style="width: 24rem;">
             <div class="card-body text-center">
-                <img src="https://storage.googleapis.com/efor-static/UADO/Cloudkey/Logo_Single.png" alt="" srcset="" class="">
               <h5 class="card-title ">Acceso a Google Apps</h5>
               <h6 class=" mb-4 rel-subtituloCard ">
                 Por favor ingrese su usuario y contraseña. ¿Problemas de
@@ -37,17 +37,21 @@
                   >Soporte</a
                 >
               </h6>
-              <h6 class="text-left">Usuario</h6>
+              <div class="container rel-contenido">
+                <h6 class="text-left">Usuario</h6>
               <input
                 type="text"
                 class="form-control"
                 id="formGroupExampleInput"
                 placeholder=""
               />
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>uao.edu.co</option>
-                <option>asuac.org.co</option>
-              </select>
+              <div class="rel-seleccionar">
+               <p>@</p><select class="form-control" id="exampleFormControlSelect1">
+                  <option>uao.edu.co</option>
+                  <option>asuac.org.co</option>
+                </select>
+              </div>
+              
               <div class="form-group text-left">
                 <label for="exampleInputPassword1">Contraseña</label>
                 <input
@@ -57,12 +61,12 @@
                   placeholder=""
                 />
               </div>
-
               <a href=""
                 ><button type="button" class="btn btn-danger">
                   Enviar
                 </button></a
               >
+              </div>
             </div>
           </div>
         </div>
