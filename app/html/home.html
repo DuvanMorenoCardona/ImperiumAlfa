@@ -259,7 +259,8 @@
     <div class="row">
             <div class="btn-group">
                 <a class="btn btn-fab" id="main">
-                    <button class="mdc-fab mdc-fab--extended">
+                    <button class="mdc-fab mdc-fab--extended"
+                            data-toggle="modal" data-target="#create-event">
                         <span class="material-icons mdc-fab__icon">add</span>
                         <span class="mdc-fab__label">Create</span>
                     </button>
@@ -268,6 +269,108 @@
     </div>
 </div>
 
+<div class="modal fade" id="create-event" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Añadir Evento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <form>
+                    <div class="sub-form">
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Nombre del evento</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Dependecia</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                    </div>
+                    <div class="sub-form">
+                    <div class="mdc-text-field">
+                        <input type="text" id="my-text-field" class="mdc-text-field__input">
+                        <label class="mdc-floating-label" for="my-text-field">Encargado del evento</label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                    
+                    </div>
+                    <div class="sub-form">
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Centro de costos</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Rubro</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                    </div>
+                    <div class="sub-form">
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Extensión</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                    </div>
+                    <div class="sub-form">
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Fecha de inicio</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Fecha de fin</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                    <div class="sub-form">
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Hora de inicio</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Hora de fin</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                    </div>
+                    <div class="sub-form">
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Cantidad de monitores</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                    </div>
+                    <div class="sub-form">
+                        <div class="mdc-text-field">
+                            <input type="text" id="my-text-field" class="mdc-text-field__input">
+                            <label class="mdc-floating-label" for="my-text-field">Observaciones</label>
+                            <div class="mdc-line-ripple"></div>
+                        </div>
+                    </div>
+                    
+
+                </form>
+
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="uv-btn-modal" data-dismiss="modal">CANCELAR</button>
+                <button type="button" class="uv-btn-modal">AÑADIR</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
