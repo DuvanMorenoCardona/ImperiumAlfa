@@ -14,19 +14,60 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/monitores.css"
+    />
     <script src="main.js"></script>
   </head>
   <body>
-    <div class="row">
-      <div class="col">
-        1 of 3
+    <div class="row rel-cabecera">
+      <div class="col-md-2">
+        <img
+          src="https://www.uao.edu.co/sites/all/themes/uao/images/UAO-universidad-de-cali.png"
+          alt=""
+          id="imagen-logo"
+        />
       </div>
-      <div class="col">
-        2 of 3
+      <div class="col-md-2 offset-md-1">
+        <h2 id="filtrar">Filtrar</h2>
       </div>
-      <div class="col">
-        3 of 3
+      <div class="col-md-3">
+        <input
+          type="text"
+          class=""
+          id="exampleFormControlInput1"
+          placeholder="Buscar"
+        />
+      </div>
+      <div class="col-md-2 text-center">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            A-Z
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <img
+          src="https://image.flaticon.com/icons/svg/149/149071.svg"
+          alt=""
+          srcset=""
+          id="img-logo-user"
+        />
       </div>
     </div>
 
