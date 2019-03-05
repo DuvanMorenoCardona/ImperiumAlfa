@@ -91,5 +91,6 @@ input#exampleFormControlInput1::placeholder {
 }
 
 #filtrar{
+    color: #ffffff;
     margin-top: 0.3em;
 }
