@@ -5,11 +5,12 @@ body {
 .rel-cabecera {
   background-color: red;
   height: 4em;
+  width: 100%;
+  margin: 0px;
 }
 
 #imagen-logo {
   height: 2.8em;
-  margin-left: 3em;
   margin-top: 0.5em;
 }
 
@@ -23,6 +24,7 @@ input#exampleFormControlInput1 {
   border: 0px;
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
+  max-width: 15em;
 }
 
 input#exampleFormControlInput1::placeholder {
@@ -95,4 +97,36 @@ input:valid ~ label {
 #filtrar {
   color: #ffffff;
   margin-top: 0.3em;
+}
+
+.rel-contenedor{
+    display: flex;
+    flex-flow: row;
+}
+
+.rel-menuLateral{
+    width: 8em;
+    border-right: 1px solid #afafaf;
+    height: 90.8vh;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.rel-monitores{
+    width: 100%;
+}
+
+.rel-iconos-menuLateral{
+    width: 5em;
+    align-items: center;
+    margin-left: 1em;
+}
+.rel-contenedor-editarBorrar{
+    display: flex;
+}
+.rel-editarBorrar{
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0px 1em 0px 1em;
 }
