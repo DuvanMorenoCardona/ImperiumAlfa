@@ -1,96 +1,98 @@
-body{
-    margin: 0px;
-    padding: 0px;
+body {
+  margin: 0px;
+  padding: 0px;
 }
-.rel-cabecera{
-    background-color: red;
-    height: 4em;
-}
-
-#imagen-logo{
-    height: 2.8em;
-    margin-left: 3em;
-    margin-top: 0.5em;
+.rel-cabecera {
+  background-color: red;
+  height: 4em;
 }
 
-#img-logo-user{
-    height: 2.8em;
-    margin-top: 0.5em;
+#imagen-logo {
+  height: 2.8em;
+  margin-left: 3em;
+  margin-top: 0.5em;
 }
 
-input#exampleFormControlInput1{
-    background-color: transparent;
-    border: 0px;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+#img-logo-user {
+  height: 2.8em;
+  margin-top: 0.5em;
+}
+
+input#exampleFormControlInput1 {
+  background-color: transparent;
+  border: 0px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 input#exampleFormControlInput1::placeholder {
-    color: white;
-    font-size: 1.2em;
-    font-style: italic;
-  }
-
+  color: white;
+  font-size: 1.2em;
+  font-style: italic;
+}
 
 /* casilla de texto material ------------------------------- */
-.group 			  { 
-    position:relative; 
-    margin-bottom:45px; 
-    background-color: transparent;
-  }
-  input 				{
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    display:block;
-    width:300px;
-    border:none;
-    border-bottom:1px solid #757575;
-    background-color: transparent;
-  }
-  input:focus 		{ outline:none; }
-  
-  /* LABEL ======================================= */
-  label 				 {
-    color:#999; 
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-  }
-  
-  /* active state */
-  input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
-  }
+.group {
+  position: relative;
+  margin-bottom: 45px;
+  background-color: transparent;
+}
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+}
 
-  /*-------------*/
-  .btn-secondary {
-    color: #fff;
-    background-color: #6c757d28;
-    border-color: #6c757d28;
-    margin-top: 0.8em;
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+/*-------------*/
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d28;
+  border-color: #6c757d28;
+  margin-top: 0.8em;
 }
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: rgba(141, 5, 5, 0.521);
-    border-color: rgba(155, 6, 6, 0.281);
+  color: #fff;
+  background-color: rgba(141, 5, 5, 0.521);
+  border-color: rgba(155, 6, 6, 0.281);
 }
 
-.show>.btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: rgba(141, 5, 5, 0.521);
-    border-color: rgba(155, 6, 6, 0.281);
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(141, 5, 5, 0.521);
+  border-color: rgba(155, 6, 6, 0.281);
 }
 
-#filtrar{
-    color: #ffffff;
-    margin-top: 0.3em;
+#filtrar {
+  color: #ffffff;
+  margin-top: 0.3em;
 }
