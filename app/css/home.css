@@ -201,6 +201,8 @@ body  {
   bottom: .2rem;
 }
 
+/** Modal Code */
+
 .uv-btn-modal {
 font-family: Roboto,sans-serif;
 -moz-osx-font-smoothing: grayscale;
@@ -244,3 +246,62 @@ color: #009688;
 margin: 0 .5em;
 }
 
+.modal-body form {
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+/* INPUTS // ============================== *//
+
+div .sub-form {
+    padding: 1em;
+    display: flex;
+}
+
+.group {
+  position: relative;
+  display: inline;
+  margin: 2;
+}
+
+
+textarea {
+  resize: none;
+}
+
+input {
+  background: none;
+  color: rgba(3, 3, 3, 0.699);
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  margin: .4em .3em;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #007571;
+  }
+  :focus {
+    outline: none;
+  }
+  :focus ~ label,
+  :valid ~ label {
+    top: -1.5em;
+    font-size: 12px;
+    color: #007571;
+  }
+
+label {
+  color: #0f0f0f9a;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+    transition: 300ms ease all;
+}
