@@ -2,6 +2,23 @@ body  {
     margin: 0;
 }
 
+/** Media Query*/ 
+@media (min-width: 1200px ) {
+
+}
+@media (min-width: 768px ) and (max-width: 979px) {
+
+}
+@media (max-width: 767px ) {
+        .icon-menu {
+    font-size: 1em;
+    background-color: #106360;
+    }
+}
+@media (max-width: 480px ) {
+    
+}
+
     /* topbar */
 .uv-topbar  {
     background-color: #007571;
@@ -115,6 +132,11 @@ body  {
     width: 100%;
 }
 
+.uv-menu {
+    display: flex;
+    align-content: space-around;
+}
+
 .uv-btn-menu {
     font-family: Roboto,sans-serif;
     -moz-osx-font-smoothing: grayscale;
@@ -157,7 +179,7 @@ body  {
 }
 
 .icon-menu {
-    font-size: 3rem;
+    font-size: 5em;
 }
 
 .uv-days {

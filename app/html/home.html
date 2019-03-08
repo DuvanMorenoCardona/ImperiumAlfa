@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
@@ -16,10 +16,18 @@
         <div class="row">
             <div id="logo" class="col-sm-2 col-md-2">
 
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <h4 class="text-white">Collapsed content</h4>
+                        <span class="text-muted">Toggleable via the navbar brand.</span>
+                    </div>
+                </div>
+            
             </div>
+            
             <div id="views" class="uv-views col-sm-3 col-md-3 d-flex 
                             justify-content-center
-                            align-items-center">
+                            align-items-center d-none d-md-flex">
                 <button class="uv-btn-views" onclick="viewday(event,'view-day')">DIA</button>
                 <button class="uv-btn-views" onclick="viewday(event,'view-week')">SEMANA</button>
                 <button id="defaultOpen" class="uv-btn-views" onclick="viewday(event,'view-month')" >MES</button>
@@ -62,7 +70,8 @@
     </section>
 
     <section class="uv-content">
-            <div class="uv-menu col-ms-1 col-md-1">
+            
+            <div class="uv-menu col-sm-1 col-md-1 d-none d-md-flex">
                 <button class="uv-btn-menu">
                     <div>
                         <i class="icon-menu material-icons">
