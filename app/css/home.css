@@ -250,16 +250,9 @@ margin: 0 .5em;
     margin-bottom: 1em;
 }
 
-
-
-
-
-
-
-
 /* INPUTS // ============================== *//
 
-div .sub-form {
+.sub-form {
     padding: 1em;
     display: flex;
 }
