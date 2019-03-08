@@ -14,17 +14,17 @@
 <body>  
     <section class="uv-topbar align-self-center">
         <div class="row">
-            <div id="logo" class="col">
+            <div id="logo" class="col-sm-2 col-md-2">
 
             </div>
-            <div id="views" class="uv-views col d-flex 
-                            justify-content-around
+            <div id="views" class="uv-views col-sm-3 col-md-3 d-flex 
+                            justify-content-center
                             align-items-center">
-                <button class="uv-btn-views justy-content-center">DIA</button>
-                <button class="uv-btn-views">SEMANA</button>
-                <button class="uv-btn-views">MES</button>
+                <button class="uv-btn-views" onclick="viewday(event,'view-day')">DIA</button>
+                <button class="uv-btn-views" onclick="viewday(event,'view-week')">SEMANA</button>
+                <button id="defaultOpen" class="uv-btn-views" onclick="viewday(event,'view-month')" >MES</button>
             </div>
-            <div id="month" class="uv-mounth col d-flex
+            <div id="month" class="uv-mounth col-sm-3 col-md-3 d-flex
                                     justify-content-center
                                     align-items-center">
 
@@ -40,7 +40,7 @@
 
 
             </div>
-            <div id="search" class="col d-flex
+            <div id="search" class="col-sm-2  col-md-2 d-flex
                                     justify-content-center
                                     align-items-center">
                 <div class="input-group ">
@@ -49,17 +49,20 @@
                             search
                         </i>
                     </div>
-                    <input type="text" class="form-control" placeholder="Buscar">
+                    <div class="group">
+                        <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
+                        <label id="label-search">Buscar</label>
+                    </div>
                 </div>
             </div>
-            <div id="user" class="col">
+            <div id="user" class="col-sm-2 col-md-2">
                 
             </div>
         </div>
     </section>
 
     <section class="uv-content">
-            <div class="uv-menu col-md-2">
+            <div class="uv-menu col-ms-1 col-md-1">
                 <button class="uv-btn-menu">
                     <div>
                         <i class="icon-menu material-icons">
@@ -89,7 +92,7 @@
                 </button>
             </div>
 
-            <div class="uv-calendar col-md-10">
+            <div id="view-month" class="uv-calendar col-md-11" >
                 <div id="day-id" class="uv-days row">
                     <div class="col">LUNES</div>
                     <div class="col">MARTES</div>
@@ -252,6 +255,493 @@
                     </div>
                 </div>
             </div>
+
+            <div id="view-week" class="uv-calendar col-md-11">
+                <div id="day-id" class="uv-days row">
+                    <div class="col">
+                    </div>
+                    <div class="col">LUNES
+                        <div>28</div></div>
+                    <div class="col">MARTES
+                        <div>29</div>
+                    </div>
+                    <div class="col">MIERCOLES
+                        <div>30</div>
+                    </div>
+                    <div class="col">JUEVES
+                        <div>31</div>
+                    </div>
+                    <div class="col">VIERNES
+                        <div>1</div>
+                    </div>
+                    <div class="col">SABADO
+                        <div>2</div>
+                    </div>
+                    <div class="col">DOMINGO
+                        <div>3</div>
+                    </div>
+                </div>
+                <div id="grid-id" class="uv-grid-calendar">
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            Todo el día
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            12:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            1:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            2:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            3:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            4:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            5:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            6:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            7:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            8:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            9:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            10:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            11:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div id="view-day" class="uv-calendar col-md-11">
+                <div id="day-id" class="uv-days row">
+                    <div class="col">
+                        LUNES 11
+                    </div>
+                </div>
+                <div id="grid-id" class="uv-grid-calendar">
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            Todo el día
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                        
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            12:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            1:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            2:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            3:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            4:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            5:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            6:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            7:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            8:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            9:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            10:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="uv-row-grid row">
+                        <div class="uv-grid col">
+                            11:00 AM
+                        </div>
+                        <div class="uv-grid col">
+                            <div></div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            
+            
             
 
     </section>
@@ -362,5 +852,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+
+<script src="../js/home.js"></script>
+
 </body>
 </html>

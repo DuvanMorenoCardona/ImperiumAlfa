@@ -170,6 +170,10 @@ body  {
     align-items: center;
 }
 
+.uv-grid {
+    font-weight: bold;
+    color: #0f0f0faf;
+}
 
 .uv-grid-calendar {
     height: 93%;
@@ -188,7 +192,7 @@ body  {
 
     /** ------------------------ */
 
- 
+/** Input search*/ 
 .btn-group-sm .btn-fab{
   position: fixed !important;
   right: 29px;
@@ -200,6 +204,24 @@ body  {
 #main{
   bottom: .2rem;
 }
+
+.input-group label {
+    color: #f5f6f891;
+}
+
+.input-group input {
+  background: none;
+  color: #f5f6f891;
+  font-size: .9em;
+  border: none;
+  border-radius: 0;
+  border-bottom: .09em solid #f5f6f891;
+  }
+  
+  .btn-search {
+      background-color: #f5f6f800;
+      border: #eeeeee07;
+  }
 
 /** Modal Code */
 
@@ -260,7 +282,6 @@ margin: 0 .5em;
 .group {
   position: relative;
   display: inline;
-  margin: 2;
 }
 
 
