@@ -16,6 +16,7 @@
     margin: 1.75rem auto;
     margin-top: 10em;
   }
+  
 }
 
 @media only screen and (max-width: 561px) {
@@ -72,6 +73,9 @@
 @media only screen and (max-width: 450px) {
   .rel-imagen-monitor {
     display: none;
+  }
+  .rel-menu-hamburguesa{
+    display: none !important;
   }
 }
 
@@ -299,6 +303,4 @@ color: red;
   color: #460101;
 }
 
-#files{
-
-}
+/* menu hamburguesa */
