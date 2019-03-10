@@ -44,7 +44,16 @@
     margin: 0em 0.5em 0em 0em !important;
   }
   .rel-iconos-menuLateral{
-    width: 3em !important;
+    width: 2em !important;
+  }
+  
+  .rel-menuLateral{
+    width: 5em !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .rel-imagen-monitor{
+    display: none;
   }
 }
 
@@ -157,7 +166,7 @@ input:valid ~ label {
 .rel-menuLateral{
     width: 8em;
     border-right: 1px solid #afafaf;
-    height: 90.8vh;
+    height: 93.2vh;
     display: flex;
     flex-flow: column;
     align-content: center;
@@ -188,4 +197,17 @@ input:valid ~ label {
 }
 #calendario,#configuracion{
   color: white;
+}
+.rel-nombre-monitor{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.rel-imagen-monitor{
+  max-width: 2em;
+  max-height: 2em;
+  margin-right:1em; 
+}
+.rel-monitor{
+  border-bottom: 1px solid #757575;
 }
