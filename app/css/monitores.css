@@ -11,18 +11,18 @@
 }
 
 @media only screen and (max-width: 561px) {
-  h2{
+  h2 {
     font-size: 1em;
   }
-  p{
+  p {
     font-size: 0.8em;
   }
-  #imagen-logo{
+  #imagen-logo {
     max-width: auto;
     max-height: 1.6em;
     margin-top: 1em !important;
   }
-  #filtrar{
+  #filtrar {
     margin-top: 1.5em !important;
     font-size: 1em !important;
   }
@@ -31,28 +31,28 @@
     font-size: 0.8em;
     margin-top: 0.8em !important;
   }
-  #img-logo-user{
+  #img-logo-user {
     max-width: 2em !important;
     margin-left: 1.4em;
   }
-  .rel-contenedor-editarBorrar{
+  .rel-contenedor-editarBorrar {
     padding-left: 0em;
   }
-  .rel-editarBorrar{
+  .rel-editarBorrar {
     width: 1em !important;
     height: 1em !important;
     margin: 0em 0.5em 0em 0em !important;
   }
-  .rel-iconos-menuLateral{
+  .rel-iconos-menuLateral {
     width: 2em !important;
   }
-  
-  .rel-menuLateral{
+
+  .rel-menuLateral {
     width: 5em !important;
   }
 }
 @media only screen and (max-width: 450px) {
-  .rel-imagen-monitor{
+  .rel-imagen-monitor {
     display: none;
   }
 }
@@ -158,56 +158,57 @@ input:valid ~ label {
   margin-top: 0.3em;
 }
 
-.rel-contenedor{
-    display: flex;
-    flex-flow: row;
+.rel-contenedor {
+  display: flex;
+  flex-flow: row;
 }
 
-.rel-menuLateral{
-    width: 8em;
-    border-right: 1px solid #afafaf;
-    height: 93.2vh;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: space-evenly;
-    background-color: #1b1b1b;
+.rel-menuLateral {
+  width: 8em;
+  border-right: 1px solid #afafaf;
+  height: 93.2vh;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #1b1b1b;
 }
-.rel-monitores{
-    width: 100%;
-}
-
-.rel-iconos-menuLateral{
-    width: 5em;
-    align-items: center;
-    margin-left: 1em;
-}
-.rel-contenedor-editarBorrar{
-    display: flex;
-    padding-left: 2em;
-}
-.rel-editarBorrar{
-    width: 1.5em;
-    height: 1.5em;
-    margin: 0px 1em 0px 1em;
+.rel-monitores {
+  width: 100%;
 }
 
-.rel-titulos{
+.rel-iconos-menuLateral {
+  width: 5em;
+  align-items: center;
+  margin-left: 1em;
+}
+.rel-contenedor-editarBorrar {
+  display: flex;
+  padding-left: 2em;
+}
+.rel-editarBorrar {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0px 1em 0px 1em;
+}
+
+.rel-titulos {
   margin-bottom: 1em;
 }
-#calendario,#configuracion{
+#calendario,
+#configuracion {
   color: white;
 }
-.rel-nombre-monitor{
+.rel-nombre-monitor {
   display: flex;
   justify-content: center;
   align-content: center;
 }
-.rel-imagen-monitor{
+.rel-imagen-monitor {
   max-width: 2em;
   max-height: 2em;
-  margin-right:1em; 
+  margin-right: 1em;
 }
-.rel-monitor{
+.rel-monitor {
   border-bottom: 1px solid #757575;
 }
