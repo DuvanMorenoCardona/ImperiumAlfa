@@ -14,6 +14,7 @@
   .modal-dialog {
     max-width: 60em !important;
     margin: 1.75rem auto;
+    margin-top: 10em;
   }
 }
 
@@ -296,4 +297,8 @@ color: red;
 
 .btn-link:hover{
   color: #460101;
+}
+
+#files{
+
 }
