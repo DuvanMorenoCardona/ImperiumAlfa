@@ -20,7 +20,6 @@
       media="screen"
       href="../css/monitores.css"
     />
-    
   </head>
   <body>
     <div class="row rel-cabecera">
@@ -136,8 +135,14 @@
             </div>
           </div>
         </div>
-        <a href="#" role="button" aria-pressed="true" id="boton" 
-        onclick=""
+        <a
+          href="#"
+          role="button"
+          aria-pressed="true"
+          id="boton"
+          data-target="#myModal"
+          data-toggle="modal"
+          onclick=""
           ><div class="rel-agregar-monitor">
             <div class="rel-contenido-agregar-monitor">
               <img src="../img/add.svg" alt="" />
@@ -145,6 +150,77 @@
             </div>
           </div></a
         >
+      </div>
+    </div>
+
+    <!-- The Modal bootstrap -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Añadir Contacto Monitor</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="container">
+              <div class="row rel-modal-body">
+                <div class="col-md-4">
+                  <img
+                    src="https://image.flaticon.com/icons/svg/149/149145.svg"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="col-md-8">
+                  <div class="container">
+                    <div class="row">
+                      <div class="group col-md-5">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nombre</label>
+                      </div>
+                      <div class="group col-md-5">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Apellidos</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-7">
+                        <input type="text" class="rel-inputs" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Cedula</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-7 rel-group-fecha">
+                        <input type="date" class="rel-inputs" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Fecha de Nacimiento</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 

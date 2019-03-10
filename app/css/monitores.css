@@ -10,6 +10,13 @@
   }
 }
 
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 60em !important;
+    margin: 1.75rem auto;
+  }
+}
+
 @media only screen and (max-width: 561px) {
   h2 {
     font-size: 1em;
@@ -112,7 +119,7 @@ input {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 300px;
+  width: 10em;
   border: none;
   border-bottom: 1px solid #757575;
   background-color: transparent;
@@ -135,12 +142,24 @@ label {
   -webkit-transition: 0.2s ease all;
 }
 
+.rel-group-fecha input {
+  color: transparent;
+}
+
+.rel-group-fecha input:focus {
+  color: black;
+}
+
+.rel-group-fecha input:valid {
+  color: black;
+}
+
 /* active state */
 input:focus ~ label,
 input:valid ~ label {
   top: -20px;
   font-size: 14px;
-  color: #5264ae;
+  color: #1b1b1b;
 }
 
 /*-------------*/
@@ -248,4 +267,15 @@ input:valid ~ label {
 
 #boton {
   text-decoration: none;
+}
+
+.rel-modal-body {
+  margin-top: 1em;
+}
+.rel-inputs {
+  width: 13.5em;
+}
+
+.group label {
+  margin-left: 1em;
 }
