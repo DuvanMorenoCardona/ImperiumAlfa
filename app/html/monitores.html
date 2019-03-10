@@ -24,25 +24,25 @@
   </head>
   <body>
     <div class="row rel-cabecera">
-      <div class="col-md-2">
+      <div class="col-2 col-md-2">
         <img
           src="https://www.uao.edu.co/sites/all/themes/uao/images/UAO-universidad-de-cali.png"
           alt=""
           id="imagen-logo"
         />
       </div>
-      <div class="col-md-2 offset-md-1">
+      <div class="col-2 col-md-2 offset-md-1">
         <h2 id="filtrar">Filtrar</h2>
       </div>
-      <div class="col-md-3">
+      <div class="col-3 col-md-3 ">
         <input
           type="text"
-          class=""
+          class="rel-buscar"
           id="exampleFormControlInput1"
           placeholder="Buscar"
         />
       </div>
-      <div class="col-md-2 text-center">
+      <div class="col-2 col-md-2 text-center">
         <div class="dropdown">
           <button
             class="btn btn-secondary dropdown-toggle"
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-1">
+      <div class="col-1 col-md-1">
         <img
           src="https://image.flaticon.com/icons/svg/149/149071.svg"
           alt=""
@@ -77,32 +77,56 @@
           alt=""
           srcset=""
           class="rel-iconos-menuLateral"
+          id="calendario"
         />
         <img
           src="../img/group_bold.svg"
           alt=""
           srcset=""
           class="rel-iconos-menuLateral"
+          id="monitores"
         />
         <img
           src="../img/settings_ligth.svg"
           alt=""
           srcset=""
           class="rel-iconos-menuLateral"
+          id="configuracion"
         />
       </div>
       <div class="rel-monitores">
         <div class="container">
-          <div class="row">
-            <div class="col-md-2"><h2>Nombre</h2></div>
-            <div class="col-md-2 offset-md-2"><h2>Carrera</h2></div>
-            <div class="col-md-4 offset-md-2"><h2>Editar o Eliminar</h2></div>
-          </div>
-          <div class="row text-center">
-              <div class="col-md-3"><p>Rodrigo Escobar Lopez</p></div>
-              <div class="col-md-2 offset-md-1"><p>Ingenieria Multimedia</p></div>
-              <div class="col-md-4 offset-md-2 rel-contenedor-editarBorrar " id="lapiz"><img src="../img/pencil.svg" alt="" srcset="" class="rel-editarBorrar"><img src="../img/bin.svg" alt="" srcset="" class="rel-editarBorrar"></div>
+          <div class="row rel-titulos">
+            <div class="col-2 col-md-2"><h2>Nombre</h2></div>
+            <div class="col-2 col-md-2 offset-2 offset-md-2">
+              <h2>Carrera</h2>
             </div>
+            <div class="col-4 col-md-4 offset-2 offset-md-2">
+              <h2>Editar o Eliminar</h2>
+            </div>
+          </div>
+          <div class="row text-center ">
+            <div class="col-3 col-md-3"><p>Rodrigo Escobar Lopez</p></div>
+            <div class="col-2 col-md-2 offset-1 offset-md-1">
+              <p>Ingenieria Multimedia</p>
+            </div>
+            <div
+              class="col-4 col-md-4 offset-2 offset-md-2 rel-contenedor-editarBorrar "
+              id="lapiz"
+            >
+              <img
+                src="../img/pencil.svg"
+                alt=""
+                srcset=""
+                class="rel-editarBorrar"
+              /><img
+                src="../img/bin.svg"
+                alt=""
+                srcset=""
+                class="rel-editarBorrar"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
