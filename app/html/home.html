@@ -12,59 +12,52 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/home.css" />
 </head>
 <body>  
-    <section class="uv-topbar align-self-center">
-        <div class="row">
-            <div id="logo" class="col-sm-2 col-md-2">
-
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                        <h4 class="text-white">Collapsed content</h4>
-                        <span class="text-muted">Toggleable via the navbar brand.</span>
+    <section class="uv-topbar align-selft-center">
+        <div class="container">
+            <div class="row">
+                <div id="logo" class="col-sm-2 col-md-2">
+        
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                            <h4 class="text-white">Collapsed content</h4>
+                            <span class="text-muted">Toggleable via the navbar brand.</span>
+                        </div>
                     </div>
+        
                 </div>
-            
-            </div>
-            
-            <div id="views" class="uv-views col-sm-3 col-md-3 d-flex 
-                            justify-content-center
-                            align-items-center d-none d-md-flex">
-                <button class="uv-btn-views" onclick="viewday(event,'view-day')">DIA</button>
-                <button class="uv-btn-views" onclick="viewday(event,'view-week')">SEMANA</button>
-                <button id="defaultOpen" class="uv-btn-views" onclick="viewday(event,'view-month')" >MES</button>
-            </div>
-            <div id="month" class="uv-mounth col-sm-3 col-md-3 d-flex
-                                    justify-content-center
-                                    align-items-center">
-
-                <i class="icon-arrow material-icons" style="font-size: 2em">
-                    chevron_left
-                </i>
-                <div>
-                    Febrero
+                <div id="views" class="uv-views col-sm-3 col-md-3 d-flex 
+                                                                        justify-content-center
+                                                                        align-items-center d-none d-md-flex">
+                    <button class="uv-btn-views" onclick="viewday(event,'view-day')">DIA</button>
+                    <button class="uv-btn-views" onclick="viewday(event,'view-week')">SEMANA</button>
+                    <button id="defaultOpen" class="uv-btn-views" onclick="viewday(event,'view-month')">MES</button>
                 </div>
-                <i class="icon-arrow material-icons" style="font-size: 2em">
-                    chevron_right
-                </i>
-
-
-            </div>
-            <div id="search" class="col-sm-2  col-md-2 d-flex
-                                    justify-content-center
-                                    align-items-center">
-                <div class="input-group ">
-                    <div class="input-group-prepend">
-                        <i class="icon-search material-icons" style="font-size: 2em">
-                            search
-                        </i>
+                <div id="month" class="uv-mounth col-sm-3 col-md-3 d-flex
+                                                                                                justify-content-center
+                                                                                                align-items-center">
+                
+                    <i class="icon-arrow material-icons" style="font-size: 2em">
+                        chevron_left
+                    </i>
+                    <div>
+                        Febrero
                     </div>
-                    <div class="group">
+                    <i class="icon-arrow material-icons" style="font-size: 2em">
+                        chevron_right
+                    </i>
+                
+                
+                </div>
+                <div id="search" class="col-sm-2  col-md-2  align-items-center">
+                    <div class="group-search">
                         <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                         <label id="label-search">Buscar</label>
                     </div>
                 </div>
-            </div>
-            <div id="user" class="col-sm-2 col-md-2">
+                <div id="user" class="col-sm-2 col-md-2">
                 
+                </div>
+
             </div>
         </div>
     </section>
