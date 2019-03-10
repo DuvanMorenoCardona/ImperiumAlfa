@@ -212,3 +212,26 @@ input:valid ~ label {
 .rel-monitor {
   border-bottom: 1px solid #757575;
 }
+.rel-agregar-monitor {
+  position: sticky;
+  top: 90%;
+  left: 80%;
+  border-radius: 40px;
+  background-color: #1b1b1b;
+  width: 11em;
+  height: 3,5em;
+  -webkit-box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.75);
+}
+.rel-contenido-agregar-monitor {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  padding-top: 0.5em;
+}
+.rel-contenido-agregar-monitor img {
+  height: 2em;
+  margin-right: 1em;
+}
