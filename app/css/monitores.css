@@ -270,7 +270,7 @@ input:valid ~ label {
 }
 
 .rel-modal-body {
-  margin-top: 1em;
+  padding-top: 1em;
   overflow:auto;
   height: 23em;
 }
@@ -280,4 +280,20 @@ input:valid ~ label {
 
 .group label {
   margin-left: 1em;
+}
+
+#AgregarHoprario{
+  color: #1b1b1b;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-link{
+text-decoration: none !important;
+color: red;
+}
+
+.btn-link:hover{
+  color: #460101;
 }
