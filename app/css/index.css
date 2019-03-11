@@ -1,4 +1,5 @@
-body {
+body,
+html {
   font-family: "Roboto", sans-serif;
   font-family: "Open Sans", sans-serif;
   margin: 0px;
@@ -26,6 +27,11 @@ body {
   max-width: 50vw;
 }
 
+.rel-cuerpo-iniciar-sesion {
+  width: 100%;
+  margin: 0px;
+}
+
 .rel-formularioLogin {
   display: flex;
   flex-flow: column;
@@ -34,14 +40,11 @@ body {
   text-align: center;
   height: 100vh;
 }
-.rel-texto {
-  margin-bottom: 15em;
-  color: #005956;
-}
-.rel-texto h2 {
-  font-size: 6em !important;
+
+#imagenDerecha{
   min-width: 6em;
-  max-width: 15em;
+  max-width: 25em;
+  margin-top: 22em;
 }
 .rel-texto h6 {
   font-family: "Open Sans", sans-serif;
@@ -64,4 +67,63 @@ body {
   width: 2em;
   height: 2em;
   padding-right: 1em;
+}
+
+.rel-inciar-sesion-movil{
+  display: none;
+}
+
+@media only screen and (max-width: 970px) {
+  body {
+    font-size: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rel-imagenIzquierda.col-md-6 {
+    display: none;
+  }
+  .rel-loginDerecho {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+  .rel-inciar-sesion-movil {
+    margin-top: 10em;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+  #cabecera {
+    display: none;
+  }
+  a.btn.btn-primary {
+    height: 2.7em;
+  }
+  .card {
+    padding-top: 2em;
+    width: 31em;
+    height: 35em;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+    -ms-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+    -o-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  }
+  html{
+    background-image: url(../img/Fondo.png);
+  }
+  body{
+    background-color: transparent;
+  }
+  h1{
+    color: white;
+  }
+  #imagen-card{
+    margin-top: -6em;
+    height: 9em;
+  }
+  .rel-boton-movil{
+    margin-top: 4em;
+  }
 }
