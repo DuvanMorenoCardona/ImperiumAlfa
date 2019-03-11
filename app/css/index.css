@@ -44,11 +44,17 @@ html {
 #imagenDerecha{
   min-width: 6em;
   max-width: 25em;
-  margin-top: 22em;
+  margin-top: 18em;
+}
+.rel-texto{
+  margin-bottom: 4em;
+}
+.rel-texto h2 {
+  font-size: 4em;
 }
 .rel-texto h6 {
   font-family: "Open Sans", sans-serif;
-  color: #4c4c4c !important;
+  color: #4c4c4c !important; 
 }
 .btn {
   max-width: 25em;
@@ -119,6 +125,13 @@ html {
   h1{
     color: white;
   }
+.rel-texto{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+
   #imagen-card{
     margin-top: -6em;
     height: 9em;
