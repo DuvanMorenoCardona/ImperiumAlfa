@@ -330,7 +330,9 @@ a:hover {
     margin: 1.75rem auto;
 }
 
-
+.ade {
+    display: flex;
+}
 .uv-btn-modal {
     font-family: Roboto,sans-serif;
     -moz-osx-font-smoothing: grayscale;
