@@ -41,12 +41,12 @@ html {
   height: 100vh;
 }
 
-#imagenDerecha{
+#imagenDerecha {
   min-width: 6em;
   max-width: 25em;
   margin-top: 18em;
 }
-.rel-texto{
+.rel-texto {
   margin-bottom: 4em;
 }
 .rel-texto h2 {
@@ -54,7 +54,7 @@ html {
 }
 .rel-texto h6 {
   font-family: "Open Sans", sans-serif;
-  color: #4c4c4c !important; 
+  color: #4c4c4c !important;
 }
 .btn {
   max-width: 25em;
@@ -75,7 +75,7 @@ html {
   padding-right: 1em;
 }
 
-.rel-inciar-sesion-movil{
+.rel-inciar-sesion-movil {
   display: none;
 }
 
@@ -116,27 +116,27 @@ html {
     -o-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
     box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
   }
-  html{
+  html {
     background-image: url(../img/Fondo.png);
   }
-  body{
+  body {
     background-color: transparent;
   }
-  h1{
+  h1 {
     color: white;
   }
-.rel-texto{
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-content: center;
-}
+  .rel-texto {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+  }
 
-  #imagen-card{
+  #imagen-card {
     margin-top: -6em;
     height: 9em;
   }
-  .rel-boton-movil{
+  .rel-boton-movil {
     margin-top: 4em;
   }
 }
