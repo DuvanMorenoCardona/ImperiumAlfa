@@ -211,6 +211,7 @@ input:valid ~ label {
   align-content: center;
   justify-content: space-evenly;
   background-color: #1b1b1b;
+  color: white;
 }
 .rel-monitores {
   width: 100%;
@@ -219,7 +220,6 @@ input:valid ~ label {
 .rel-iconos-menuLateral {
   width: 5em;
   align-items: center;
-  margin-left: 1em;
 }
 .rel-contenedor-editarBorrar {
   display: flex;
