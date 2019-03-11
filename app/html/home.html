@@ -12,49 +12,49 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/home.css" />
 </head>
 <body>  
-    <section class="uv-topbar align-selft-center">
+    <section class="uv-topbar">
         <div class="container">
             <div class="row">
-                <div id="logo" class="col-sm-2 col-md-2">
-        
+                <div id="logo" class="col-sm-2 col-md-2 d-none d-sm-flex">
                     <div class="collapse" id="navbarToggleExternalContent">
                         <div class="bg-dark p-4">
                             <h4 class="text-white">Collapsed content</h4>
                             <span class="text-muted">Toggleable via the navbar brand.</span>
                         </div>
                     </div>
-        
                 </div>
-                <div id="views" class="uv-views col-sm-3 col-md-3 d-flex 
-                                                                        justify-content-center
-                                                                        align-items-center d-none d-md-flex">
+                <div id="views" class="uv-views col-md-3 justify-content-center align-items-center d-none d-lg-flex">
                     <button class="uv-btn-views" onclick="viewday(event,'view-day')">DIA</button>
                     <button class="uv-btn-views" onclick="viewday(event,'view-week')">SEMANA</button>
                     <button id="defaultOpen" class="uv-btn-views" onclick="viewday(event,'view-month')">MES</button>
                 </div>
-                <div id="month" class="uv-mounth col-sm-3 col-md-3 d-flex
-                                                                                                justify-content-center
-                                                                                                align-items-center">
-                
-                    <i class="icon-arrow material-icons" style="font-size: 2em">
+
+                <div id="views" class="uv-views col col-md-3 justify-content-center align-items-center d-md-flex d-lg-none">
+                    <select class="uv-select-views custom-select custom-select-sm" onchange="viewday(event,value)">
+                        <option class="uv-btn-views"  value="view-month" selected>MES</option>
+                        <option class="uv-btn-views"  value="view-week">SEMANA</option>
+                        <option class="uv-btn-views"  value="view-day">DIA</option>
+                    </select>
+                </div>
+
+                <div id="month" class="uv-mounth col col-md-3 d-flex justify-content-center align-items-center">
+                    <i class="icon-arrow material-icons d-none d-lg-flex ">
                         chevron_left
                     </i>
-                    <div>
+                    <div class="uv-mounth-text">
                         Febrero
                     </div>
-                    <i class="icon-arrow material-icons" style="font-size: 2em">
+                    <i class="icon-arrow material-icons d-none d-lg-flex">
                         chevron_right
                     </i>
-                
-                
                 </div>
-                <div id="search" class="col-sm-2  col-md-2  align-items-center">
+                <div id="search" class="col-2  col-md-2  align-items-center d-none d-sm-flex">
                     <div class="group-search">
                         <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                         <label id="label-search">Buscar</label>
                     </div>
                 </div>
-                <div id="user" class="col-sm-2 col-md-2">
+                <div id="user" class="col-sm-2 col-md-2 d-none d-sm-flex ">
                 
                 </div>
 
@@ -94,8 +94,8 @@
                 </button>
             </div>
 
-            <div id="view-month" class="uv-calendar col-md-11" >
-                <div id="day-id" class="uv-days row">
+            <div id="view-month" class="uv-calendar col-md-11 " >
+                <div id="day-id" class="uv-days row d-none d-lg-flex">
                     <div class="col">LUNES</div>
                     <div class="col">MARTES</div>
                     <div class="col">MIERCOLES</div>
@@ -103,6 +103,15 @@
                     <div class="col">VIERNES</div>
                     <div class="col">SABADO</div>
                     <div class="col">DOMINGO</div>
+                </div>
+                <div id="day-id" class="uv-days row d-md-flex d-lg-none">
+                    <div class="col">L</div>
+                    <div class="col">M</div>
+                    <div class="col">M</div>
+                    <div class="col">J</div>
+                    <div class="col">V</div>
+                    <div class="col">S</div>
+                    <div class="col">D</div>
                 </div>
                 <div id="grid-id" class="uv-grid-calendar">
                     <div class="uv-row-grid row">
@@ -259,7 +268,7 @@
             </div>
 
             <div id="view-week" class="uv-calendar col-md-11">
-                <div id="day-id" class="uv-days row">
+                <div id="day-id" class="uv-days d-none d-md-flex row">
                     <div class="col-1 col-md-1">
                     </div>
                     <div class="col">LUNES
@@ -283,13 +292,38 @@
                         <div>3</div>
                     </div>
                 </div>
+                <div id="day-id" class="uv-days d-flex d-md-none row">
+                    <div class="col col-md-1">
+                    </div>
+                    <div class="col">L
+                        <div>28</div>
+                    </div>
+                    <div class="col">M
+                        <div>29</div>
+                    </div>
+                    <div class="col">M
+                        <div>30</div>
+                    </div>
+                    <div class="col">J
+                        <div>31</div>
+                    </div>
+                    <div class="col">V
+                        <div>1</div>
+                    </div>
+                    <div class="col">S
+                        <div>2</div>
+                    </div>
+                    <div class="col">D
+                        <div>3</div>
+                    </div>
+                </div>
                 <div id="grid-id" class="uv-grid-calendar">
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             Todo el día
                         </div>
-                        <div class="uv-grid col">
-                            <div></div>
+                        <div class="uv-grid  col">
+                            
                         </div>
                         <div class="uv-grid col">
                             <div></div>
@@ -311,7 +345,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             12:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -337,7 +371,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             1:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -363,7 +397,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             2:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -389,7 +423,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             3:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -415,7 +449,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             4:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -441,7 +475,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             5:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -467,7 +501,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             6:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -493,7 +527,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             7:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -519,7 +553,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             8:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -545,7 +579,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             9:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -571,7 +605,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col col-md-1">
                             10:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -608,7 +642,7 @@
                 </div>
                 <div id="grid-id" class="uv-grid-calendar">
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             Todo el día
                         </div>
                         <div class="uv-grid col">
@@ -617,7 +651,7 @@
                         
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             12:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -625,7 +659,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             1:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -633,7 +667,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             2:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -641,7 +675,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             3:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -649,7 +683,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             4:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -657,7 +691,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             5:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -665,7 +699,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             6:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -673,7 +707,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             7:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -681,7 +715,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             8:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -689,7 +723,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             9:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -697,7 +731,7 @@
                         </div>
                     </div>
                     <div class="uv-row-grid row">
-                        <div class="uv-grid col-md-1">
+                        <div class="uv-grid col-3 col-md-1">
                             10:00 AM
                         </div>
                         <div class="uv-grid col">
@@ -720,13 +754,14 @@
                 <a class="btn btn-fab" id="main">
                     <button class="mdc-fab mdc-fab--extended"
                             data-toggle="modal" data-target="#create-event">
-                        <span class="material-icons mdc-fab__icon">add</span>
-                        <span class="mdc-fab__label">Evento</span>
+                        <span class="uv-span-add">+</span>
+                        <span class="mdc-fab__label d-none d-md-flex">Evento</span>
                     </button>
                 </a>
             </div>
     </div>
 </div>
+
 
 <div class="modal fade" id="create-event" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
@@ -739,9 +774,8 @@
                 </button>
             </div>
             <div class="modal-body">
-                
                 <form>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                         <div class="group">
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Nombre del evento</label>
@@ -751,13 +785,13 @@
                             <label>Dependecia</label>
                         </div>
                     </div>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                         <div class="group">
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Encargado del evento</label>
                         </div>
                     </div>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                             <div class="group">
                                 <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                                 <label>Centro de costos</label>
@@ -767,13 +801,13 @@
                                 <label>Rubro</label>
                             </div>
                     </div>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                         <div class="group">
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Extensión</label>
                         </div>
                     </div>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                         <div class="group">
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Fecha de inicio</label>
@@ -782,7 +816,7 @@
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Fecha de fin</label>
                         </div>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                         <div class="group">
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Hora de inicio</label>
@@ -792,28 +826,27 @@
                             <label>Hora de fin</label>
                         </div>
                     </div>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                         <div class="group">
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Cantidad de monitores</label>
                         </div>
                     </div>
-                    <div class="sub-form">
+                    <div class="sub-form row">
                         <div class="group">
                             <input type="text" required="required"><span class="highlight"></span><span class="bar"></span>
                             <label>Extensión</label>
                         </div>
                     </div>
-                    
-
                 </form>
 
                 
             </div>
-            <div class="modal-footer">
-                <button type="button" class="uv-btn-modal" data-dismiss="modal">CANCELAR</button>
-                <button type="button" class="uv-btn-modal">AÑADIR</button>
-            </div>
+            
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="uv-btn-modal" data-dismiss="modal">CANCELAR</button>
+            <button type="button" class="uv-btn-modal">AÑADIR</button>
         </div>
     </div>
 </div>
