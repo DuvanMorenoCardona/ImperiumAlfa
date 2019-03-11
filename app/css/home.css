@@ -173,6 +173,12 @@ body  {
     color: #f5f6f8;
 }
 
+.uv-btn-menu svg {
+    width: 50%;
+    fill: #f5f6f8;
+    margin: .5em;
+}
+
 .icon-menu {
     font-size: 500%;
 }
