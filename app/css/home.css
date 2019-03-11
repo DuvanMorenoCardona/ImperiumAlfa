@@ -1,0 +1,432 @@
+body  {
+    margin: 0px;
+    padding: 0px;
+}
+
+/** Media Query*/ 
+@media (min-width: 1200px ) {
+
+}
+@media (min-width: 768px ) and (max-width: 979px) {
+
+}
+@media (max-width: 767px ) {
+
+}
+@media (max-width: 480px ) {
+    
+}
+
+/* topbar ---------------------------------- */
+.uv-topbar  {
+    display: flex;
+    background-color: #1b1b1b;
+    height: 3em;
+    padding: 0 1rem;
+    align-items: center;
+}
+
+.uv-btn-views {
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: .875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    --mdc-ripple-fg-size: 0;
+    --mdc-ripple-left: 0;
+    --mdc-ripple-top: 0;
+    --mdc-ripple-fg-scale: 1;
+    --mdc-ripple-fg-translate-end: 0;
+    --mdc-ripple-fg-translate-start: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    will-change: transform,opacity;
+    padding: 0 1rem;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 64px;
+    height: 2em;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #DB0517;
+    border-color: #DB0517;
+    color: white;
+    margin: 0 .5em;
+}
+
+
+
+.uv-select-views {
+    background-color: #DB0517;
+    border-color: #DB0517;
+    color: #f5f6f8;
+    font-weight: bold;
+    text-align: center;
+    width: 7em;
+    padding: 0px .2em;
+}
+
+.uv-select-views option {
+    background-color: #DB0517;
+    border-color: #DB0517;
+    color: #f5f6f8;
+    font-weight: bold;
+    text-align: center;
+    width: 7em;
+    padding: 0px .2em;
+}
+
+.uv-mounth {
+    align-items: center;
+    display: flex;
+    color: #f5f6f8;
+    font-size: 1.5em;
+}
+
+.uv-mounth-text {
+    font-size: 5vmin;
+}
+
+.icon-arrow {
+    color: #f5f6f891;
+    font-size: 2em;
+}
+
+.icon-search {
+    color: #f5f6f891;
+}
+
+
+    /** ------------------------ */
+ 
+    /**content ---------------------------*/
+
+.uv-content {
+    height: 92vh;
+    display: flex; 
+}
+
+
+ /** Menu Home */ 
+.uv-menu {  
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    align-content: space-around;
+    padding: 0;
+}
+
+.uv-btn-menu {
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: 50%;
+    line-height: 2.25em;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    --mdc-ripple-fg-size: 0;
+    --mdc-ripple-left: 0;
+    --mdc-ripple-top: 0;
+    --mdc-ripple-fg-scale: 1;
+    --mdc-ripple-fg-translate-end: 0;
+    --mdc-ripple-fg-translate-start: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    will-change: transform,opacity;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    border-color: #ffffff00;
+    color: #f5f6f8;
+}
+
+.uv-btn-menu svg {
+    width: 50%;
+    fill: #f5f6f8;
+    margin: .5em;
+}
+
+.icon-menu {
+    font-size: 500%;
+}
+/**------------------ */
+
+
+
+.uv-calendar {
+    border: #a7a7a73d solid .005rem;
+    width: 100%;
+}
+
+.uv-days {
+    height: 7%;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8em;
+    color: #DB0517;
+    display: flex;
+    align-items: center;
+}
+
+.uv-days div {
+    padding: 0px;
+}
+
+.uv-grid {
+    font-weight: bold;
+    font-size: 60%;
+    color: #0f0f0faf;
+    border: #a7a7a73d solid .005rem;
+    text-align: center;
+    padding: 0px;
+}
+
+.uv-grid-calendar {
+    height: 93%;
+    display:flex;
+    flex-direction: column;
+}
+
+.uv-row-grid {
+    height: 20%;
+}
+ /** ------------------------ */
+/** Evento */
+.uv-evento {
+    background-color: #f5f6f800;
+    border-bottom-color: #1b1b1b07;
+    border: none;
+    display: flex;
+    margin: 1%;
+    border-radius: 1em;
+    font-weight: bold;
+    padding: 0px;
+    width: 90%;
+    height: 2em;
+    box-shadow: 0 0em 1em 0 rgba(0,0,0,0.2), 0 1em 1em 0 rgba(0,0,0,0.19);
+    
+    
+}
+
+.uv-evento-color {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #DB0517;
+    padding: 0px;
+    margin: 0px;
+}
+
+.uv-evento .uv-evento-text {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/** */
+/** Input search*/ 
+.btn-group-sm .btn-fab{
+  position: fixed !important;
+  right: 29px;
+}
+.btn-group .btn-fab{
+  position: fixed !important;
+  right: 20px;
+}
+#main{
+  bottom: .2rem;
+}
+
+.input-group label {
+    color: #f5f6f891;
+}
+
+.input-group input {
+  background: none;
+  color: #f5f6f891;
+  font-size: .9em;
+  border: none;
+  border-radius: 0;
+  border-bottom: .09em solid #f5f6f891;
+  }
+  
+.btn-search {
+    background-color: #f5f6f800;
+    border: #eeeeee07;
+}
+
+.mdc-fab {
+    background-color: #DB0517;
+}
+.mdc-fab .uv-span-add {
+    font-size: 1.2em;
+}
+
+/** Modal Code */
+
+.modal-content {
+    height: 85vh;
+}
+
+.modal-body {
+    justify-content: center;
+    overflow: auto;
+}
+
+
+.modal-dialog {
+    max-width: 33rem;
+    margin: 1.75rem auto;
+}
+
+
+.uv-btn-modal {
+    font-family: Roboto,sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-size: .875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+    letter-spacing: .0892857143em;
+    text-decoration: none;
+    text-transform: uppercase;
+    --mdc-ripple-fg-size: 0;
+    --mdc-ripple-left: 0;
+    --mdc-ripple-top: 0;
+    --mdc-ripple-fg-scale: 1;
+    --mdc-ripple-fg-translate-end: 0;
+    --mdc-ripple-fg-translate-start: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    will-change: transform,opacity;
+    padding: 0 1rem;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 64px;
+    height: 2em;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    overflow: hidden;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: #ffffff00;
+    border-color: #ffffff00;
+    color: #DB0517;
+    margin: 0 .5em;
+}
+
+.modal-body form {
+    margin-bottom: 1em;
+}
+
+/* INPUTS // ============================== */
+
+.sub-form {
+    padding: 1em;
+    display: flex;
+}
+
+.group {
+  position: relative;
+  display: inline;
+  justify-content: space-around;
+}
+
+
+textarea {
+  resize: none;
+}
+
+.group input {
+  background: none;
+  color: rgba(3, 3, 3, 0.699);
+  font-size: 18px;
+  padding: .1em;
+  margin: .4em .3em;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #DB0517;
+  }
+  :focus {
+    outline: none;
+  }
+  :focus ~ label,
+  :valid ~ label {
+    top: -1em;
+    font-size: 12px;
+    color: #a10000;
+  }
+
+label {
+  color: #0f0f0f9a;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+    transition: 300ms ease all;
+}
+
+.group-search {
+    position: relative;
+    display: inline;
+    justify-content: space-around;
+}
+
+.group-search input {
+    background: none;
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 1em;
+    padding: .4em 10px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.699);
+}
+
+.group-search label {
+  color: #fdfdfd9a;
+}
