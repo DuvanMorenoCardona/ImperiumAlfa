@@ -68,6 +68,12 @@
   .rel-menuLateral {
     width: 5em !important;
   }
+
+  .rel-agregar-monitor{
+    width: 2em !important;
+    left: 90% !important;
+  }
+
 }
 @media only screen and (max-width: 450px) {
   .rel-imagen-monitor {
@@ -406,7 +412,18 @@ a:hover{
   margin: 1em 0em 0em 1em;
   height: 2em;
 }
-
+.rel-contenido-agregar-monitor h3{
+  display: none;
+}
+.rel-agregar-monitor{
+  width: 3em;
+  padding: 0em 0.5em 0.5em 0.5em !important;
+  left: 85% !important;
+}
+.rel-contenido-agregar-monitor img {
+    height: 2em;
+    margin-right: 0em;
+}
 }
 
 
