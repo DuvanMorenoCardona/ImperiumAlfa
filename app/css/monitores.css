@@ -1,96 +1,429 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
-.rel-cabecera{
-    background-color: red;
-    height: 4em;
+@media only screen and (max-width: 1030px) {
+  .rel-buscar-principal {
+    max-width: 10em !important;
+  }
 }
 
-#imagen-logo{
-    height: 2.8em;
-    margin-left: 3em;
-    margin-top: 0.5em;
+@media only screen and (max-width: 718px) {
+  .rel-buscar-principal {
+    max-width: 7em !important;
+  }
 }
 
-#img-logo-user{
-    height: 2.8em;
-    margin-top: 0.5em;
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 60em !important;
+    margin: 1.75rem auto;
+    margin-top: 10em;
+  }
 }
 
-input#exampleFormControlInput1{
-    background-color: transparent;
-    border: 0px;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
+@media only screen and (max-width: 561px) {
+  h2 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.8em;
+  }
+  .rel-contenido-agregar-monitor {
+    font-size: 0.5em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  .rel-agregar-monitor {
+    width: 7.5em !important;
+    height: 1.6em !important;
+  }
+  #imagen-logo {
+    max-width: auto;
+    max-height: 1.6em;
+    margin-top: 1em !important;
+  }
+  #filtrar {
+    margin-top: 1.5em !important;
+    font-size: 1em !important;
+  }
+  .rel-buscar-principal {
+    max-width: 5em !important;
+    font-size: 0.8em;
+    margin-top: 0.8em !important;
+  }
+  #img-logo-user {
+    max-width: 2em !important;
+    margin-left: 1.4em;
+  }
+  .rel-contenedor-editarBorrar {
+    padding-left: 0em;
+  }
+  .rel-editarBorrar {
+    width: 1em !important;
+    height: 1em !important;
+    margin: 0em 0.5em 0em 0em !important;
+  }
+  .rel-iconos-menuLateral {
+    width: 2em !important;
+  }
+
+  .rel-menuLateral {
+    width: 5em !important;
+  }
+
+  .rel-agregar-monitor{
+    width: 2em !important;
+    left: 90% !important;
+  }
+
+}
+@media only screen and (max-width: 450px) {
+  .rel-imagen-monitor {
+    display: none;
+  }
+  /*.rel-menu-hamburguesa{
+    display: none !important;
+  }*/
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.rel-cabecera {
+  background-color: #1b1b1b;
+  height: 4em;
+  width: 100%;
+  margin: 0px;
+}
+
+#imagen-logo {
+  height: 2.8em;
+  margin-top: 0.5em;
+}
+
+#img-logo-user {
+  height: 2.8em;
+  margin-top: 0.5em;
+}
+
+input#exampleFormControlInput1 {
+  background-color: transparent;
+  border: 0px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  max-width: 15em;
 }
 
 input#exampleFormControlInput1::placeholder {
-    color: white;
-    font-size: 1.2em;
-    font-style: italic;
-  }
-
+  color: white;
+  font-size: 1.2em;
+  font-style: italic;
+}
 
 /* casilla de texto material ------------------------------- */
-.group 			  { 
-    position:relative; 
-    margin-bottom:45px; 
-    background-color: transparent;
-  }
-  input 				{
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    display:block;
-    width:300px;
-    border:none;
-    border-bottom:1px solid #757575;
-    background-color: transparent;
-  }
-  input:focus 		{ outline:none; }
-  
-  /* LABEL ======================================= */
-  label 				 {
-    color:#999; 
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-  }
-  
-  /* active state */
-  input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
-  }
+.group {
+  position: relative;
+  margin-bottom: 45px;
+  background-color: transparent;
+}
+input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 10em;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+}
 
-  /*-------------*/
-  .btn-secondary {
-    color: #fff;
-    background-color: #6c757d28;
-    border-color: #6c757d28;
-    margin-top: 0.8em;
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.rel-group-fecha input {
+  color: transparent;
+}
+
+.rel-group-fecha input:focus {
+  color: black;
+}
+
+.rel-group-fecha input:valid {
+  color: black;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #1b1b1b;
+}
+
+/*-------------*/
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d28;
+  border-color: #6c757d28;
+  margin-top: 0.8em;
 }
 
 .btn-secondary:hover {
-    color: #fff;
-    background-color: rgba(141, 5, 5, 0.521);
-    border-color: rgba(155, 6, 6, 0.281);
+  color: #fff;
+  background-color: rgba(141, 5, 5, 0.521);
+  border-color: rgba(155, 6, 6, 0.281);
 }
 
-.show>.btn-secondary.dropdown-toggle {
-    color: #fff;
-    background-color: rgba(141, 5, 5, 0.521);
-    border-color: rgba(155, 6, 6, 0.281);
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(141, 5, 5, 0.521);
+  border-color: rgba(155, 6, 6, 0.281);
 }
 
-#filtrar{
-    color: #ffffff;
-    margin-top: 0.3em;
+#filtrar {
+  color: #ffffff;
+  margin-top: 0.3em;
 }
+
+.rel-contenedor {
+  display: flex;
+  flex-flow: row;
+}
+
+.rel-menuLateral {
+  width: 8em;
+  border-right: 1px solid #afafaf;
+  height: 93.2vh;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: space-evenly;
+  background-color: #1b1b1b;
+  color: white;
+}
+.rel-monitores {
+  width: 100%;
+}
+
+.rel-iconos-menuLateral {
+  width: 5em;
+  align-items: center;
+}
+.rel-contenedor-editarBorrar {
+  display: flex;
+  padding-left: 2em;
+}
+.rel-editarBorrar {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0px 1em 0px 1em;
+}
+
+.rel-titulos {
+  margin-bottom: 1em;
+}
+#calendario,
+#configuracion {
+  color: white;
+}
+.rel-nombre-monitor {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.rel-imagen-monitor {
+  max-width: 2em;
+  max-height: 2em;
+  margin-right: 1em;
+}
+.rel-monitor {
+  border-bottom: 1px solid #757575;
+}
+.rel-agregar-monitor {
+  position: sticky;
+  top: 90%;
+  left: 70%;
+  border-radius: 40px;
+  background-color: #1b1b1b;
+  width: 13em;
+  height: 3, 5em;
+  -webkit-box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 15px -1px rgba(0, 0, 0, 0.75);
+}
+.rel-contenido-agregar-monitor {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  padding-top: 0.5em;
+}
+.rel-contenido-agregar-monitor img {
+  height: 2em;
+  margin-right: 1em;
+}
+
+#boton {
+  text-decoration: none;
+}
+
+.rel-modal-body {
+  padding-top: 1em;
+  overflow: auto;
+  height: 23em;
+}
+.rel-inputs {
+  width: 13.5em;
+}
+
+.group label {
+  margin-left: 1em;
+}
+
+#AgregarHoprario {
+  color: #1b1b1b;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-link {
+  text-decoration: none !important;
+  color: red;
+}
+
+.btn-link:hover {
+  color: #460101;
+}
+
+.rel-menu-imagen {
+  display: flex;
+}
+/* menu hamburguesa */
+pre {
+  tab-size: 8;
+}
+
+@media screen and (max-width: 2560px) {
+  .rel-contenedor-menu-hamburguesa{
+    display: none;
+  }
+  #imagen-logo-uao{
+    height: 3.5em;
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .rel-contenedor-menu-hamburguesa{
+    display: block;
+  }
+  .side-collapse-container {
+    width: 100%;
+    position: relative;
+    left: 0;
+    transition: left 0.4s;
+  }
+  .side-collapse-container.out {
+    left: 200px;
+  }
+  .side-collapse {
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    position: fixed;
+    overflow: hidden;
+    transition: width 0.4s;
+  }
+  .side-collapse.in {
+    width: 0;
+  }
+  .navbar-inverse.side-collapse {
+    background-color: #1b1b1b;
+    z-index: 1;
+    -webkit-box-shadow: 4px 3px 28px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 3px 28px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 3px 28px -3px rgba(0, 0, 0, 0.75);
+  }
+  #imagen-logo {
+    display: none;
+  }
+  .iconos-menu-hamburguesa {
+    height: 3em;
+    margin-left: 1em;
+  }
+  .rel-menu-hamburguesa li {
+    margin-top: 2em;
+  }
+  .rel-menuLateral {
+    display: none;
+  }
+  .rel-monitores {
+    height: 100vh;
+  }
+  #imagen-logo-menu-hamburguesa{
+    height: 4em;
+  }
+
+  .rel-contenedor-menu-hamburguesa{
+    margin-top: 1em;
+  }
+  nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color:red;
+  text-decoration: none;
+}
+.rel-buscar-principal{
+  display:none;
+}
+#imagen-logo-uao{
+    display: none;
+  }
+.rel-buscar{
+  margin-left: 0.5em;
+  width: 6em;
+}
+.rel-contenedor-buscar{
+  display: flex;
+}
+.rel-contenedor-buscar img{
+  margin: 1em 0em 0em 1em;
+  height: 2em;
+}
+.rel-contenido-agregar-monitor h3{
+  display: none;
+}
+.rel-agregar-monitor{
+  width: 3em;
+  padding: 0em 0.5em 0.5em 0.5em !important;
+  left: 85% !important;
+}
+.rel-contenido-agregar-monitor img {
+    height: 2em;
+    margin-right: 0em;
+}
+}
+
+
