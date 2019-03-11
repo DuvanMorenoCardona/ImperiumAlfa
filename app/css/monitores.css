@@ -1,11 +1,11 @@
 @media only screen and (max-width: 1030px) {
-  .rel-buscar {
+  .rel-buscar-principal {
     max-width: 10em !important;
   }
 }
 
 @media only screen and (max-width: 718px) {
-  .rel-buscar {
+  .rel-buscar-principal {
     max-width: 7em !important;
   }
 }
@@ -16,7 +16,6 @@
     margin: 1.75rem auto;
     margin-top: 10em;
   }
-  
 }
 
 @media only screen and (max-width: 561px) {
@@ -45,7 +44,7 @@
     margin-top: 1.5em !important;
     font-size: 1em !important;
   }
-  .rel-buscar {
+  .rel-buscar-principal {
     max-width: 5em !important;
     font-size: 0.8em;
     margin-top: 0.8em !important;
@@ -74,9 +73,9 @@
   .rel-imagen-monitor {
     display: none;
   }
-  .rel-menu-hamburguesa{
+  /*.rel-menu-hamburguesa{
     display: none !important;
-  }
+  }*/
 }
 
 body {
@@ -276,7 +275,7 @@ input:valid ~ label {
 
 .rel-modal-body {
   padding-top: 1em;
-  overflow:auto;
+  overflow: auto;
   height: 23em;
 }
 .rel-inputs {
@@ -287,20 +286,127 @@ input:valid ~ label {
   margin-left: 1em;
 }
 
-#AgregarHoprario{
+#AgregarHoprario {
   color: #1b1b1b;
   text-decoration: none;
   display: flex;
   justify-content: space-between;
 }
 
-.btn-link{
-text-decoration: none !important;
-color: red;
+.btn-link {
+  text-decoration: none !important;
+  color: red;
 }
 
-.btn-link:hover{
+.btn-link:hover {
   color: #460101;
 }
 
+.rel-menu-imagen {
+  display: flex;
+}
 /* menu hamburguesa */
+pre {
+  tab-size: 8;
+}
+
+@media screen and (max-width: 2560px) {
+  .rel-contenedor-menu-hamburguesa{
+    display: none;
+  }
+  #imagen-logo-uao{
+    height: 3.5em;
+    margin-left: 1em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .rel-contenedor-menu-hamburguesa{
+    display: block;
+  }
+  .side-collapse-container {
+    width: 100%;
+    position: relative;
+    left: 0;
+    transition: left 0.4s;
+  }
+  .side-collapse-container.out {
+    left: 200px;
+  }
+  .side-collapse {
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    position: fixed;
+    overflow: hidden;
+    transition: width 0.4s;
+  }
+  .side-collapse.in {
+    width: 0;
+  }
+  .navbar-inverse.side-collapse {
+    background-color: #1b1b1b;
+    z-index: 1;
+    -webkit-box-shadow: 4px 3px 28px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 3px 28px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 3px 28px -3px rgba(0, 0, 0, 0.75);
+  }
+  #imagen-logo {
+    display: none;
+  }
+  .iconos-menu-hamburguesa {
+    height: 3em;
+    margin-left: 1em;
+  }
+  .rel-menu-hamburguesa li {
+    margin-top: 2em;
+  }
+  .rel-menuLateral {
+    display: none;
+  }
+  .rel-monitores {
+    height: 100vh;
+  }
+  #imagen-logo-menu-hamburguesa{
+    height: 4em;
+  }
+
+  .rel-contenedor-menu-hamburguesa{
+    margin-top: 1em;
+  }
+  nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color:red;
+  text-decoration: none;
+}
+.rel-buscar-principal{
+  display:none;
+}
+#imagen-logo-uao{
+    display: none;
+  }
+.rel-buscar{
+  margin-left: 0.5em;
+  width: 6em;
+}
+.rel-contenedor-buscar{
+  display: flex;
+}
+.rel-contenedor-buscar img{
+  margin: 1em 0em 0em 1em;
+  height: 2em;
+}
+
+}
+
+
