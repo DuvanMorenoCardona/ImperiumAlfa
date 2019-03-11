@@ -225,7 +225,40 @@ body  {
     height: 20%;
 }
  /** ------------------------ */
+/** Evento */
+.uv-evento {
+    background-color: #f5f6f800;
+    border-bottom-color: #1b1b1b07;
+    border: none;
+    display: flex;
+    margin: 1%;
+    border-radius: 1em;
+    font-weight: bold;
+    padding: 0px;
+    width: 90%;
+    height: 2em;
+    box-shadow: 0 0em 1em 0 rgba(0,0,0,0.2), 0 1em 1em 0 rgba(0,0,0,0.19);
+    
+    
+}
 
+.uv-evento-color {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #DB0517;
+    padding: 0px;
+    margin: 0px;
+}
+
+.uv-evento .uv-evento-text {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+/** */
 /** Input search*/ 
 .btn-group-sm .btn-fab{
   position: fixed !important;
