@@ -1,0 +1,81 @@
+body {
+  -webkit-background-size: cover;
+  -ms-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  overflow: visible !important;
+  margin-bottom: 0;
+  color: #585858;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  background-image: url(https://storage.googleapis.com/efor-static/ACAL/cloudkey/back_cloudkey.jpg);
+  background-position: center -50px;
+  background-repeat: repeat;
+}
+h5.card-title {
+  color: red;
+  margin-top: 1em;
+}
+h6.text-left,
+label {
+  color: red;
+}
+h6 {
+  font-size: 14px !important;
+}
+.btn-danger {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+  max-width: 10em;
+  min-width: 100%;
+}
+.card {
+  background: #fff;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  -ms-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  -o-box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px 0;
+}
+a {
+  text-decoration: none !important;
+}
+
+label {
+  margin-top: 1em;
+}
+
+.rel-imagen {
+  margin-top: 2em;
+  max-width: 10em;
+  align-content: center;
+  padding-right: 3em;
+}
+input,
+select {
+  max-width: 15em;
+  color: #818181;
+}
+
+.rel-seleccionar {
+  display: flex;
+  color: #818181;
+}
+
+.rel-contenido {
+  margin: 2em;
+  max-width: 18em;
+}
+
+button.btn.btn-danger {
+  margin-top: 2em;
+}
