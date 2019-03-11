@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Monitores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/monitores.css"
+    />
+  </head>
+  <body>
+    <div class="row rel-cabecera">
+      <img
+        src="https://boletines.uao.edu.co/footer/Icons/UAO_dark.png"
+        alt=""
+        id="imagen-logo-uao"
+      />
+      <div class="col-2 col-md-2 rel-contenedor-menu-hamburguesa">
+        <div>
+          <div class="navbar-header">
+            <button
+              data-toggle="collapse-side"
+              data-target=".side-collapse"
+              data-target-2=".side-collapse-container"
+              type="button"
+              class="navbar-toggle pull-left"
+            >
+              <img src="../img/menu.svg" alt="" style="width: 1em" />
+            </button>
+          </div>
+          <div class="navbar-inverse side-collapse in">
+            <nav role="navigation" class="navbar-collapse">
+              <ul class="nav navbar-nav rel-menu-hamburguesa">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="https://boletines.uao.edu.co/footer/Icons/UAO_dark.png"
+                      alt=""
+                      id="imagen-logo-menu-hamburguesa"
+                  /></a>
+                </li>
+                <li>
+                  <div class="rel-contenedor-buscar">
+                    <img src="../img/buscar.svg" alt="" />
+                    <input
+                      type="text"
+                      class="rel-buscar"
+                      id="exampleFormControlInput1"
+                      placeholder="Buscar"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="../img/calendar_ligth.svg"
+                      alt=""
+                      srcset=""
+                      class="iconos-menu-hamburguesa"
+                    />
+                    <span>Calendario</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="../img/group_bold.svg"
+                      alt=""
+                      srcset=""
+                      class="iconos-menu-hamburguesa"
+                    />
+                    <span>Monitores</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="../img/settings_ligth.svg"
+                      alt=""
+                      srcset=""
+                      class="iconos-menu-hamburguesa"
+                    />
+                    <span>Ajustes</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <img
+          src="https://boletines.uao.edu.co/footer/Icons/UAO_dark.png"
+          alt=""
+          id="imagen-logo"
+        />
+      </div>
+      <div class="col-2 col-md-2 offset-md-1">
+        <h2 id="filtrar">Filtrar</h2>
+      </div>
+      <div class="col-3 col-md-3 ">
+        <input
+          type="text"
+          class="rel-buscar-principal"
+          id="exampleFormControlInput1"
+          placeholder="Buscar"
+        />
+      </div>
+      <div class="col-2 col-md-2 text-center">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            A-Z
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Z-A</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-1 col-md-1">
+        <img
+          src="https://image.flaticon.com/icons/svg/149/149071.svg"
+          alt=""
+          srcset=""
+          id="img-logo-user"
+        />
+      </div>
+    </div>
+    <div class="rel-contenedor">
+      <div class="rel-menuLateral">
+        <div class="rel-calendario-contenedor text-center">
+          <img
+            src="../img/calendar_ligth.svg"
+            alt=""
+            srcset=""
+            class="rel-iconos-menuLateral"
+            id="calendario"
+          />
+          <h5>Calendario</h5>
+        </div>
+        <div class="rel-monitores-contenedor text-center">
+          <img
+            src="../img/group_bold.svg"
+            alt=""
+            srcset=""
+            class="rel-iconos-menuLateral"
+            id="monitores"
+          />
+          <h5>Monitores</h5>
+        </div>
+        <div class="rel-ajustes-contenedor text-center">
+          <img
+            src="../img/settings_ligth.svg"
+            alt=""
+            srcset=""
+            class="rel-iconos-menuLateral"
+            id="configuracion"
+          />
+          <h5>Ajustes</h5>
+        </div>
+      </div>
+      <div class="rel-monitores">
+        <div class="container ">
+          <div class="row rel-titulos">
+            <div class="col-2 col-md-2"><h2>Nombre</h2></div>
+            <div class="col-2 col-md-2 offset-2 offset-md-2">
+              <h2>Carrera</h2>
+            </div>
+            <div class="col-4 col-md-4 offset-2 offset-md-2">
+              <h2>Editar o Eliminar</h2>
+            </div>
+          </div>
+          <div class="row text-center rel-monitor">
+            <div class="col-3 col-md-3 rel-nombre-monitor">
+              <img
+                src="https://image.flaticon.com/icons/svg/149/149071.svg"
+                alt=""
+                srcset=""
+                class="rel-imagen-monitor"
+              />
+              <p>Rodrigo Escobar Lopez</p>
+            </div>
+            <div class="col-2 col-md-2 offset-1 offset-md-1">
+              <p>Ingenieria Multimedia</p>
+            </div>
+            <div
+              class="col-4 col-md-4 offset-2 offset-md-2 rel-contenedor-editarBorrar "
+              id="lapiz"
+            >
+              <img
+                src="../img/pencil.svg"
+                alt=""
+                srcset=""
+                class="rel-editarBorrar"
+              /><img
+                src="../img/bin.svg"
+                alt=""
+                srcset=""
+                class="rel-editarBorrar"
+              />
+            </div>
+          </div>
+        </div>
+        <a
+          href="#"
+          role="button"
+          aria-pressed="true"
+          id="boton"
+          data-target="#myModal"
+          data-toggle="modal"
+          onclick=""
+          ><div class="rel-agregar-monitor">
+            <div class="rel-contenido-agregar-monitor">
+              <img src="../img/add.svg" alt="" />
+              <h3>MONITOR</h3>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+
+    <!-- The Modal bootstrap -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Añadir Contacto Monitor</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="container">
+              <div class="row rel-modal-body">
+                <div class="col-md-4">
+                  <a href="#"
+                    ><img
+                      src="https://image.flaticon.com/icons/svg/149/149145.svg"
+                      alt=""
+                      srcset=""
+                  /></a>
+                </div>
+                <div class="col-md-8">
+                  <div class="container">
+                    <div class="row">
+                      <div class="group col-md-5">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nombre</label>
+                      </div>
+                      <div class="group col-md-5">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Apellidos</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-7">
+                        <input type="text" class="rel-inputs" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Cedula</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-7 rel-group-fecha">
+                        <input type="date" class="rel-inputs" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Fecha de Nacimiento</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-5">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Telefono</label>
+                      </div>
+                      <div class="group col-md-5">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Celular</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-12">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Correo</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-12">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Programa</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="group col-md-12">
+                        <input type="text" required />
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Codigo estudiantil</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h6>Horarios disponibles</h6>
+                        <div class="rel-boton-agregar-monitor">
+                          <a href="#" id="AgregarHoprario"
+                            ><p>Agregar nuevo horario</p>
+                            <p>+</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-link" data-dismiss="modal">
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-link" data-dismiss="modal">
+              Guardar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/monitores.js"></script>
+  </body>
+</html>

@@ -21,6 +21,7 @@ html {
 
 .rel-imagenIzquierda h1 {
   padding-top: 50vh;
+
 }
 
 .rel-loginDerecho {
@@ -41,6 +42,7 @@ html {
   height: 100vh;
 }
 
+<<<<<<< HEAD
 #imagenDerecha {
   min-width: 6em;
   max-width: 25em;
@@ -51,6 +53,17 @@ html {
 }
 .rel-texto h2 {
   font-size: 4em;
+=======
+.rel-texto {
+  margin-bottom: 15em;
+  color: #005956;
+}
+.rel-texto h2 {
+  font-size: 6em !important;
+  min-width: 6em;
+  max-width: 15em;
+
+>>>>>>> 8d6f47ee5bd0e83b797bc1a27b654e9819b4c609
 }
 .rel-texto h6 {
   font-family: "Open Sans", sans-serif;
